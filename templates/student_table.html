@@ -1,0 +1,24 @@
+<h2>Your Attendance</h2>
+
+<table border="1">
+<tr>
+    <th>Name</th>
+    <th>Reg No</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Status</th>
+</tr>
+
+{% for r in records %}
+<tr>
+    <td>{{ r.name }}</td>
+    <td>{{ r.regno }}</td>
+    <td>{{ r.date }}</td>
+    <td>{{ r.time }}</td>
+    <td>{{ r.status }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<br>
+<a href="/">Back</a>
